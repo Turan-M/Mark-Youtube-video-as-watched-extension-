@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "images/logo128.png",
+         "16": "images/logo16.png",
+         "32": "images/logo32.png",
+         "48": "images/logo48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "markers.css" ],
+      "js": [ "markers.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Add mark as seen buttons to your favorite websites.",
+   "icons": {
+      "128": "images/logo128.png",
+      "16": "images/logo16.png",
+      "32": "images/logo32.png",
+      "48": "images/logo48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnCLrkHWRWcOzLvXb7vu5ODaX60Fc3l+t7YdCWxGN6l0GidnZwN/eDg4S80d+5AAyDzNe5MahKBJdJg4X3W8ht8ltUrzr3lk7lO3m/2Cc+bLU25Y8lvsCQSCuDZhatwHpF+BAR3Osws54zG8QOGq6cz1Pz6Matbx/r1LYQ96ocsmm3nI44hMjRBHWifXbgmXpKWDX/f+zRgNMWSvtPB/7MME/VCiWyEo+L3LfMQUkXGXtBBJ4dfSlzbPrldVgRweif2ETkx+LjMfE97pVu9JKpdO/ATUBzmJbyZuCRhT0rMW16DJj16C9blHLD7zIMbE85unIQl7hxbl9yJw6ND454QIDAQAB",
+   "manifest_version": 3,
+   "name": "Mark Youtube video as watched",
+   "permissions": [ "declarativeContent", "storage", "unlimitedStorage", "downloads" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0"
+}

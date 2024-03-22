@@ -1,0 +1,118 @@
+
+/* Youtube ------------------------------------------------------------------------------------ */
+ytd-thumbnail, .ytp-left-controls {
+    transition: opacity 160ms, -webkit-filter 160ms;
+    transition: opacity 160ms, filter 160ms;
+    transition: opacity 160ms, filter 160ms, -webkit-filter 160ms;
+}
+
+ytd-thumbnail .markers-extension_button, .ytp-left-controls .markers-extension_button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.4s;
+    z-index: 3;
+    cursor: pointer;
+}
+
+ytd-thumbnail .markers-extension_button:after, .ytp-left-controls .markers-extension_button:after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #FF0000;
+    transition: background-color 0.4s;
+}
+
+ytd-thumbnail .markers-extension_button:before, .ytp-left-controls .markers-extension_button:before {
+    content: " ";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50% !important;
+    border: solid 1px white;
+    transition: transform 0.4s;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+ytd-thumbnail.markers-extension_marked, .ytp-left-controls.markers-extension_marked {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+ytd-thumbnail.markers-extension_marked .markers-extension_button:after, .ytp-left-controls.markers-extension_marked .markers-extension_button:after {
+    background-color: transparent;
+}
+
+ytd-thumbnail.markers-extension_marked .markers-extension_button:before, .ytp-left-controls.markers-extension_marked .markers-extension_button:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.ytp-left-controls .markers-extension_button {
+    position: relative;
+    top: 5px;
+}
+
+/* Dynamic ------------------------------------------------------------------------------------ */
+.markers-extension_button {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.4s;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.markers-extension_button:after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #FF0000;
+    transition: background-color 0.4s;
+}
+
+.markers-extension_button:before {
+    content: " ";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50% !important;
+    border: solid 1px rgb(83, 100, 113);
+    transition: transform 0.4s;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.markers-extension_marked {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+.markers-extension_marked .markers-extension_button:after {
+    background-color: transparent;
+}
+
+.markers-extension_marked .markers-extension_button:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+

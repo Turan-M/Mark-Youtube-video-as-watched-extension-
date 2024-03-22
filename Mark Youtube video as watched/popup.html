@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      body, html {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        width: 300px;
+        padding: 0px;
+        font-size: 14px;
+        color: #585858;
+      }
+
+      .btn {
+        padding: .5rem 1rem;
+        width: 100%;
+        display: block;
+        background: #cd212f;
+        color: white;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background: #df246f;
+      }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <button id="btn-export" class="btn">Export Data</button>
+
+    <button id="btn-import" class="btn">Import Data</button>
+    <input type="file" id="file-input" style="display:none" accept=".json">
+
+    <button id="btn-clear" class="btn">Clear Data</button>
+
+    <div id="confirm-clear" style="display:none; margin-top: 20px;">
+        <p>Are you sure you want to clear all data?</p>
+        <button id="btn-clear-yes" class="btn">Yes</button>
+        <button id="btn-clear-no" class="btn">No</button>
+    </div>
+
+
+</div=>
+
+<script src="popup.js"></script>
+</body>
+</html>
