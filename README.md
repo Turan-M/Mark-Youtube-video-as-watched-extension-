@@ -1,7 +1,7 @@
 # Mark YouTube Videos as Watched Extension
 
 ## Overview
-This browser extension is designed to enhance your YouTube experience by allowing you to manually mark videos as watched. It's an easy-to-use tool that keeps your video feed clear of clutter, helping you track which videos you've seen with a simple, visible indicator.
+This extension automatically enhances your YouTube experience by allowing you to manually mark videos as watched. An easy-to-use tool, it keeps your video feed clutter-free and helps you keep track of which ones you have seen with an easy, visible indicator.
 
 ## Compatibility
 The extension is developed for browsers based on the Chromium engine, such as Google Chrome, Microsoft Edge, and Brave. It is not compatible with non-Chromium browsers and may not function as intended if attempted to be used elsewhere.
